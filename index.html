@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Expenses chart component | Richard Llewellyn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-cream">
+
+  <main class="flex flex-col">
+    <section class="container flex flex-col" id="expenses">
+      <div id="expensesHeader"
+        class="flex flex-row justify-between items-center bg-soft-red color-pale-orange br-20">
+        <div>
+          <p>My balance</p>
+          <h1 class="fw-bold fs-large">$921.48</h1>
+        </div>
+        <div class="icon">
+          <img src="./images/logo.svg" alt="balance-icon" width="70" height="47">
+        </div>
+      </div>
+
+      <div id="expensesBody" class="bg-pale-orange br-20 pd-40">
+        <h2 class="fw-bold color-dark-brown fs-large mb-15">
+          Spending - Last 7 days
+        </h2>
+        <div id="expenses-chart" class="flex flex-row justify-between items-end pb-40">
+          <div class="day" id="monday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">mon</div>
+          </div>
+
+          <div class="day" id="tuesday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">tue</div>
+          </div>
+
+          <div class="day" id="wednesday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">wed</div>
+          </div>
+
+          <div class="day" id="thursday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">thu</div>
+          </div>
+
+          <div class="day" id="friday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">fri</div>
+          </div>
+
+          <div class="day" id="saturday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">sat</div>
+          </div>
+
+          <div class="day" id="sunday">
+            <div class="day-amount hidden bg-dark-brown color-pale-orange fw-bold br-5">$0</div>
+            <div class="day-expenses br-5 mb-15"></div>
+            <div class="day-title color-medium-brown fs-small text-center">sun</div>
+          </div>
+        </div>
+
+        <div id="expensesTotal" class="flex flex-col justify-between pt-35">
+
+          <p class="color-medium-brown">Total this month</p>
+          <div class="flex flex-row justify-between items-center">
+            <h2 id="total-expenses" class="fw-bold fs-x-large color-dark-brown">$478.33</h2>
+            <div class="text-right">
+              <p class="fw-bold color-dark-brown">+2.4%</p>
+              <p class="color-medium-brown">from last month</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/1of1baw" target="_blank">Mohamed El Bachir DIENG</a>.
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
